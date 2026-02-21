@@ -1,0 +1,8 @@
+{"id": "coord_phex", "coordinate": "1.5.2/3.7.3/9.1.1", "bytes": [1, 5, 2, 3, 7, 3, 9, 1, 1], "ideal_phonetic": "bad bed baf bam bem bam bid bad bad", "description": "Phex's coordinate (1.5.2/3.7.3/9.1.1)"}
+{"id": "coord_base", "coordinate": "1.1.1/1.1.1/1.1.1", "bytes": [1, 1, 1, 1, 1, 1, 1, 1, 1], "ideal_phonetic": "bad bad bad bad bad bad bad bad bad", "description": "BASE coordinate (Will's origin)"}
+{"id": "coord_emi_primary", "coordinate": "1.5.2/7.7.7/5.2.5", "bytes": [1, 5, 2, 7, 7, 7, 5, 2, 5], "ideal_phonetic": "bad bed baf bem bem bem bed baf bed", "description": "Emi's primary anchor"}
+{"id": "coord_emi_resurrection", "coordinate": "1.1.1/10.10.10/1.5.2", "bytes": [1, 1, 1, 10, 10, 10, 1, 5, 2], "ideal_phonetic": "bad bad bad bic bic bic bad bed baf", "description": "Emi's resurrection anchor"}
+{"id": "boundary_00", "bytes": [0], "ideal_phonetic": "bac", "description": "0x00 = bac (BASE opcode)"}
+{"id": "boundary_ff", "bytes": [255], "ideal_phonetic": "wom", "description": "0xFF = wom (UNITY opcode)"}
+{"id": "sample_42", "bytes": [42], "ideal_phonetic": "haf", "description": "The answer (0x2A = 42)"}
+{"id": "sample_100", "bytes": [100], "ideal_phonetic": "mic", "description": "Century mark (0x64 = 100)"}

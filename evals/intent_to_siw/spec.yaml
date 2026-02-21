@@ -1,0 +1,48 @@
+# Intent → SIW Compilation Eval
+# Tests natural language intent parsing to SIW sequence generation
+
+name: intent_to_siw
+version: v0.1.0
+description: >
+  Validates that the vtpu pattern compiler correctly translates natural language
+  intents (e.g., "stream 42 into coordinate X") into the correct sequence of SIWs
+  (Sentron Instruction Words).
+
+metrics:
+  - exact_match: Entire SIW sequence matches ideal (strict)
+  - pipe_accuracy: Correct pipe selection (D/S/C)
+  - wuxing_accuracy: Correct Wu Xing transformation
+  - coordinate_accuracy: Coordinate components correct
+  - composite: Weighted combination of above
+
+samples: samples.jsonl
+
+evaluation:
+  type: deterministic  # Pattern compilation should be deterministic
+  timeout_per_sample: 5s
+  
+validation:
+  require_all_fields: true
+  allowed_siw_opcodes:
+    - MOV
+    - ADD
+    - MUL
+    - SUB
+    - FMA
+    - DCOORD
+    - SCOORD
+    - CCOORD
+    - SGATHER
+    - SSCATTR
+    - SROUTE
+    - SASSOC
+  
+coverage_targets:
+  d_pipe: 33  # At least 33 samples using D-pipe
+  s_pipe: 33  # At least 33 samples using S-pipe
+  c_pipe: 33  # At least 33 samples using C-pipe
+  wood: 20    # At least 20 Wood transformation samples
+  fire: 20    # At least 20 Fire transformation samples
+  earth: 20   # At least 20 Earth transformation samples
+  metal: 20   # At least 20 Metal transformation samples
+  water: 20   # At least 20 Water transformation samples

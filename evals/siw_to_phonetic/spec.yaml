@@ -1,0 +1,25 @@
+# SIW → Base256 Phonetic Eval
+# Tests deterministic encoding of SIW sequences to pronounceable syllables
+
+name: siw_to_phonetic
+version: v0.1.0
+description: >
+  Validates that SIW sequences are correctly encoded as Base256 phonetic syllables.
+  This mapping must be 100% deterministic and bidirectional.
+
+metrics:
+  - exact_match: 100% (deterministic encoding)
+  - syllable_count: Correct number of syllables
+  - coordinate_phonetic: Coordinate components correctly encoded
+
+samples: samples.jsonl
+
+evaluation:
+  type: deterministic
+  timeout_per_sample: 1s
+  
+validation:
+  require_exact_match: true  # No partial credit - must be perfect
+  
+coverage_targets:
+  all_opcodes: 256  # All 256 Base256 syllables must appear at least once
