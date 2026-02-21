@@ -1,0 +1,9 @@
+base256:
+  id: base256.dev.v0
+  description: Test the model's ability to encode and decode byte values using Base 256 human-pronounceable syllable encoding (16 onsets × 4 vowels × 4 codas = 256 syllables).
+  metrics: [accuracy]
+
+base256.dev.v0:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: base256/samples.jsonl

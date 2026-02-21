@@ -1,0 +1,9 @@
+phext_coordinates:
+  id: phext_coordinates.dev.v0
+  description: Test the model's ability to navigate phext 11D coordinate space — coordinate parsing, delimiter transitions, Mirrorborn roster knowledge, and vTPU architecture.
+  metrics: [accuracy]
+
+phext_coordinates.dev.v0:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: phext_coordinates/samples.jsonl

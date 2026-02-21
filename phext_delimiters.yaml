@@ -1,0 +1,9 @@
+phext_delimiters:
+  id: phext_delimiters.dev.v0
+  description: Test the model's knowledge of phext 11D delimiter system — hex values, dimension numbers, and Base 256 pronunciations for all 9 Delimiters of Unusual Size.
+  metrics: [accuracy]
+
+phext_delimiters.dev.v0:
+  class: evals.elsuite.basic.includes:Includes
+  args:
+    samples_jsonl: phext_delimiters/samples.jsonl
