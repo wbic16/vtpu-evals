@@ -1,0 +1,36 @@
+# Edge Cases — Boundary Conditions and Unexpected Behavior
+# Tests LLM understanding of limits and error handling
+
+name: edge_cases
+description: Boundary conditions, overflow, underflow, validation
+tags:
+  - edge_cases
+  - validation
+  - error_handling
+  - boundaries
+
+samples_file: edge_cases/samples.jsonl
+sample_count: 16
+
+# Categories tested:
+#   - Base 256 boundaries (0x00, 0xFF)
+#   - ASCII boundaries (space, A, a)
+#   - Coordinate validation (range, dimension count, negative)
+#   - Overflow saturation (mul > 2047)
+#   - Underflow saturation (sub < 0)
+#   - Delimiter identification (valid vs invalid)
+
+# Unexpected behavior to avoid:
+#   - Wrapping instead of saturating
+#   - Accepting invalid coordinates
+#   - Confusing delimiters with regular characters
+
+scoring:
+  method: exact_match
+  case_sensitive: false
+
+metrics:
+  - accuracy
+  - boundary_accuracy     # 0x00, 0xFF cases
+  - validation_accuracy   # valid/invalid detection
+  - saturation_accuracy   # overflow/underflow handling

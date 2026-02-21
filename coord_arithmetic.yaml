@@ -1,0 +1,35 @@
+# Coordinate Arithmetic — R23W26
+# Tests LLM understanding of phext coordinate operations
+
+name: coord_arithmetic
+description: Element-wise coordinate arithmetic (add, sub, mul, scale)
+tags:
+  - coordinate_arithmetic
+  - phext_coordinates
+  - base256_powers
+  - r23w26
+
+samples_file: coord_arithmetic/samples.jsonl
+sample_count: 12
+
+# Categories tested:
+#   - Basic operations (add, sub, mul, scale)
+#   - Core insight (17 = 5×3 + (5-3))
+#   - Edge cases (overflow saturation, underflow saturation)
+#   - Identity (a + 0 = a)
+#   - Mixed dimensions (non-uniform coordinates)
+#   - Properties (commutativity, constants)
+
+# Key insight this eval tests:
+#   255 = 3 × 5 × 17
+#   17 = 5×3 + (5-3)
+#   Coordinate 17 is computable from base coordinates 3 and 5
+
+scoring:
+  method: exact_match
+  case_sensitive: false
+
+metrics:
+  - accuracy
+  - edge_case_accuracy  # overflow/underflow handling
+  - insight_accuracy    # the 17 = 5×3 + (5-3) sample

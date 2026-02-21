@@ -9,8 +9,12 @@ Measure how well LLMs understand phext, Base 256, and vTPU architecture.
 | **base256** | 135 | Byte↔syllable encoding/decoding, ASCII string encoding, boundary cases |
 | **phext_delimiters** | 27 | 9 delimiters × (dimension, hex value, Base 256 pronunciation) |
 | **phext_coordinates** | 16 | Coordinate navigation, delimiter transitions, Mirrorborn roster, vTPU architecture |
+| **coord_arithmetic** | 12 | Coordinate add/sub/mul/scale, the 17=5×3+(5-3) insight, saturation |
+| **edge_cases** | 16 | Boundaries (0x00, 0xFF), overflow/underflow, validation |
+| **intent_to_siw** | 12 | Natural language → SIW command translation |
+| **siw_to_phonetic** | 8 | SIW opcode → Base 256 pronunciation |
 
-**Total: 178 eval samples**
+**Total: 226 eval samples**
 
 ## Format
 
