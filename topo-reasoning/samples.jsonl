@@ -1,0 +1,10 @@
+{"input": "Manhattan distance from 1.1.1/1.1.1/1.1.1 to 1.1.1/1.1.1/1.1.2?", "ideal": "1"}
+{"input": "Manhattan distance from 1.1.1/1.1.1/1.1.1 to 2.2.2/2.2.2/2.2.2?", "ideal": "9"}
+{"input": "Manhattan distance from 1.1.1/1.1.1/1.1.2 to 13.13.13/13.13.13/13.13.13?", "ideal": "108"}
+{"input": "Midpoint coordinate between 1.1.1/1.1.1/1.1.1 and 13.13.13/13.13.13/13.13.13?", "ideal": "7.7.7/7.7.7/7.7.7"}
+{"input": "If flux enters at Wood (row 0), which WuXing element receives it next?", "ideal": "Fire (row 1)"}
+{"input": "What is the WuXing generating cycle order?", "ideal": "Wood→Fire→Earth→Metal→Water→Wood"}
+{"input": "After Water in the generating cycle, which element comes next?", "ideal": "Wood"}
+{"input": "Do coordinates 1.5.2/3.7.3/9.1.1 and 1.5.3/3.7.3/9.1.1 share the same SHELF?", "ideal": "Yes (both have SHELF=5)"}
+{"input": "Do coordinates 1.5.2/3.7.3/9.1.1 and 2.5.2/3.7.3/9.1.1 share the same LIBRARY?", "ideal": "No (LIBRARY 1 vs 2)"}
+{"input": "Which coordinate is closer to 5.5.5/5.5.5/5.5.5: (a) 6.6.6/6.6.6/6.6.6 or (b) 1.1.1/1.1.1/1.1.1?", "ideal": "(a) 6.6.6/6.6.6/6.6.6 (distance 9 vs 36)"}

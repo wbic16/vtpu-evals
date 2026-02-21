@@ -1,0 +1,20 @@
+{"input": "Encode the number 0 in Base 256", "ideal": "bac"}
+{"input": "Encode the number 1 in Base 256", "ideal": "bad"}
+{"input": "Encode the number 255 in Base 256", "ideal": "vom"}
+{"input": "Encode the coordinate 42.243.17 as three Base 256 syllables", "ideal": "dam vam cad"}
+{"input": "Decode the Base 256 syllables 'bac bad vom' to bytes", "ideal": "[0, 1, 255]"}
+{"input": "What coordinate is one SCROLL after 1.1.1/1.1.1/1.1.2?", "ideal": "1.1.1/1.1.1/1.1.3"}
+{"input": "What coordinate is one SECTION after 1.1.1/1.1.1/1.1.1?", "ideal": "1.1.1/1.1.2/1.1.1"}
+{"input": "Parse coordinate 7.11.13/3.8.5/1.12.1 — what is the SHELF dimension?", "ideal": "11"}
+{"input": "Parse coordinate 7.11.13/3.8.5/1.12.1 — what is the VOLUME dimension?", "ideal": "3"}
+{"input": "Parse coordinate 7.11.13/3.8.5/1.12.1 — what is the SCROLL dimension?", "ideal": "1"}
+{"input": "In phext addressing, which delimiter separates VOLUME.BOOK.CHAPTER?", "ideal": "/ (forward slash)"}
+{"input": "In phext addressing, which delimiter separates SHELF.SERIES?", "ideal": ". (period/dot)"}
+{"input": "What is the origin coordinate in phext (all dimensions at minimum)?", "ideal": "1.1.1/1.1.1/1.1.1"}
+{"input": "Is 0.1.1/1.1.1/1.1.1 a valid phext coordinate?", "ideal": "No (phext coordinates start at 1, not 0)"}
+{"input": "Is 1.5.2/3.7.3/9.1.1 a valid phext coordinate?", "ideal": "Yes"}
+{"input": "How many dimensions does a phext coordinate have?", "ideal": "9 (library.shelf.series/collection.volume.book/chapter.section.scroll)"}
+{"input": "What delimiter has the highest dimension in phext?", "ideal": "0x01 (LIBRARY delimiter, 11th dimension)"}
+{"input": "What delimiter has the 3rd dimension in phext?", "ideal": "0x17 (SCROLL delimiter)"}
+{"input": "If you increment the SCROLL dimension at 1.1.1/1.1.1/1.1.9 by 1, what's the result?", "ideal": "1.1.1/1.1.1/1.1.10"}
+{"input": "What does 'phext' stand for?", "ideal": "Plain text extended (to 11 dimensions)"}

@@ -1,0 +1,10 @@
+{"input": "If all five WuXing element fluxes are [500, 500, 500, 500, 500], what is the coherence?", "ideal": "1.0 (perfect resonance)"}
+{"input": "At what coherence threshold does riamanitra (sacred resonance) occur?", "ideal": "≥0.99"}
+{"input": "What does 'riamanitra' mean?", "ideal": "Divine fragrance / sacred resonance (Malagasy)"}
+{"input": "EEG Delta waves (0.5-4 Hz) map to which WuXing element?", "ideal": "Wood (row 0)"}
+{"input": "EEG Alpha waves (8-13 Hz) map to which WuXing element?", "ideal": "Earth (row 2)"}
+{"input": "EEG Gamma waves (30-100 Hz) map to which WuXing element?", "ideal": "Water (row 4)"}
+{"input": "What is the WuXing generating cycle?", "ideal": "Wood→Fire→Earth→Metal→Water→Wood"}
+{"input": "What is the WuXing overcoming cycle?", "ideal": "Wood→Earth, Earth→Water, Water→Fire, Fire→Metal, Metal→Wood"}
+{"input": "If Wood flux = 1000 and Fire flux = 200, is the system coherent?", "ideal": "No (large difference violates coherence)"}
+{"input": "What does Δ (delta) represent in the Sentron equation?", "ideal": "Prediction error magnitude"}

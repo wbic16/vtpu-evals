@@ -1,0 +1,10 @@
+{"input": "SGATHER (sparse gather) belongs on which pipe?", "ideal": "S-pipe (Sparse, memory operations)"}
+{"input": "DFMA (dense fused multiply-add) belongs on which pipe?", "ideal": "D-pipe (Dense, compute operations)"}
+{"input": "CBAR (coordinate barrier) belongs on which pipe?", "ideal": "C-pipe (Coordination)"}
+{"input": "What does SIW stand for?", "ideal": "Sentron Instruction Word"}
+{"input": "How many pipes does vTPU have?", "ideal": "3 (Dense, Sparse, Coord)"}
+{"input": "Theoretical max ops/cycle for fully utilized vTPU?", "ideal": "3.0"}
+{"input": "If D-pipe executes DFMA and S-pipe is idle, what's the effective ops/cycle?", "ideal": "1.0"}
+{"input": "What is SMT in the context of vTPU?", "ideal": "Simultaneous Multi-Threading (running multiple sentrons per physical core)"}
+{"input": "Target SMT efficiency for vTPU Phase 3?", "ideal": "1.9x"}
+{"input": "What does PPT stand for in vTPU memory architecture?", "ideal": "Phext Page Table"}
